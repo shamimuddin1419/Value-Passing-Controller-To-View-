@@ -1,0 +1,38 @@
+﻿@model PassValueApp.Models.Student
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    
+    <table style="border:1px solid; border-color:aqua">
+        <tr>
+            <td style="font-size:20px;">ID:</td>
+            <td >
+                @Html.DisplayFor(model=>model.ID)
+            </td>
+            <td style="font-size:20px;">Name:</td>
+            <td>
+                @Html.DisplayFor(model => model.Name)
+            </td>
+            <td style="font-size:20px;">Roll:</td>
+            <td>
+                @Html.DisplayFor(model => model.Roll)
+            </td>
+            <td style="font-size:20px;">Email:</td>
+            <td>
+                @Html.DisplayFor(model => model.Email)
+            </td>
+            
+        </tr>
+
+    </table>
+     
+    
+</div>
+
